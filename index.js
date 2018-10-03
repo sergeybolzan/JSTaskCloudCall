@@ -1,6 +1,6 @@
-let { BinaryTree, cmp } = require('./BinaryTree');
+let { BinaryTree } = require('./BinaryTree');
 
-let tree = new BinaryTree(cmp);
+let tree = new BinaryTree();
 
 tree.insert('b');
 tree.insert('a');
@@ -39,7 +39,7 @@ try{
     console.log(message)// This tree does not contain 'x'
 }
 
-tree = new BinaryTree(cmp);
+tree = new BinaryTree();
 
 tree.insert('a');
 tree.insert('b');

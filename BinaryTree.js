@@ -1,7 +1,7 @@
 let { Node } = require('./Node');
 
 exports.BinaryTree = class BinaryTree {
-    constructor(comparator) {
+    constructor(comparator = cmp) {
         this.comparator = comparator;
         this.root = null;
     }
@@ -121,6 +121,8 @@ exports.BinaryTree = class BinaryTree {
     }
 };
 
-exports.cmp = function cmp(str1, str2) {
+function cmp(str1, str2) {
     return str1 < str2;
 };
+
+exports.cmp = cmp;
